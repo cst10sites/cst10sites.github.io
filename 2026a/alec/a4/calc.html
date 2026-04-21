@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<link rel="stylesheet" href="calc.css">
+</head>
+<body>
+	<h1>Tip Calculator</h1>
+	<h3>Befor Tax</h3>
+	<form>
+		<input type="text" id="subtotal">
+		 <input type="reset">
+	</form>
+	<p>+ GST (5%)</p>
+	<p id="output"></p>
+
+	<h3>Tip Amount</h3>
+	<select id="tipValue"><!--no input for dropdown-->
+	        <option value="0">None (0%)</option>
+	        <option value="0.05">Poor (5%)</option>
+	        <option value="0.1">Average (10%)</option>
+	        <option value="0.15">Good (15%)</option>
+	        <option value="0.2">Great (20%)</option>
+	    </select>
+	    <p id="afterTip"></p>
+
+<h3>Number of People Splitting(Including Your Self)</h3>
+	<form>
+		<input type="text" id="peopleSplit">
+		 <input type="reset">
+	</form>
+	    <p id="afterSplit"></p>
+
+	<h3>
+Click here to open <a class="button" href="reaction.html">reaction speed test</a>
+	</h3>
+
+	     <input type="button" value="Submit" onclick="calculate1()">
+	<script src="calc.js"></script>
+
+</body>
+</html>

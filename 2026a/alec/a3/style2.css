@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, Helvetica;
+  margin: 50px 50px;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/606d4deb4db8c15ea53b3624/1618824875786-3V9HT8BLB1L5PEEJC6ZQ/124.jpg");
+  background-attachment: fixed;
+  background-size: 150% auto;
+}
+
+div.content {
+color: white;
+background: rgba(0, 0, 97, .3); 
+padding: 100px;
+border-style: solid;
+border-color: whitesmoke;
+}

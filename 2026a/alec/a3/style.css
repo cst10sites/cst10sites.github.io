@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica;
+  margin: 50px 50px;
+  background-image: url("https://wallpapercave.com/wp/wp4265395.jpg");
+  background-attachment: fixed;
+  background-size: 150% auto; /* stretch bg to fit */
+}
+
+
+div.content {
+color: white;
+background: rgba(0, 0, 97, .3); 
+padding: 100px;
+border-style: solid;
+border-color: palevioletred;
+}
+
+
+/* table*/ 
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  color: black;
+  border: 5px solid palevioletred;
+}
+tr {
+  background-color: rgba(255, 255, 255, .5);
+}
