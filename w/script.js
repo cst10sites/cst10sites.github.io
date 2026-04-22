@@ -43,16 +43,25 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.appendChild(overlay);
 
         // --- LOGIN CHECK ---
-        confirmButton.onclick = function () {
+
+        function checkPassword() {
             if (passwordInput.value !== "html5css3") {
                 window.location.replace("http://www.google.com/ncr");
-            }
-            else {
+                return;
+            } else {
                 document.cookie = "username=cst10; path=/; max-age=" + (60 * 60 * 24);
                 overlay.remove();
             }
-        };
-    }
+        }
 
-    verify();
+        confirmButton.onclick = checkPassword;
+
+        passwordInput.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                checkPassword();
+            }
+        });
+
+    }
+   verify();
 });
