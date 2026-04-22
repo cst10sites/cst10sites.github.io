@@ -45,11 +45,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // --- LOGIN CHECK ---
         confirmButton.onclick = function () {
             if (passwordInput.value !== "html5css3") {
-                return;
+                window.location.replace("http://www.google.com/ncr");
             }
-
-            document.cookie = "username=cst10; path=/; max-age=" + (60 * 60 * 24);
-            overlay.remove();
+            else {
+                document.cookie = "username=cst10; path=/; max-age=" + (60 * 60 * 24);
+                overlay.remove();
+            }
         };
     }
 
