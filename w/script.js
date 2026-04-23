@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function checkPassword() {
             if (passwordInput.value !== "html5css3") {
+                alert("Incorrect Password")
                 window.location.replace("http://www.google.com/ncr");
                 return;
             } else {
